@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" , href="style.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>숫자 맞추기 게임</h1>
+    <div>
+        <div id="stat-answer">정답을 먼저 작성해 주세요</div>
+        <input id="start-area" type="number">
+        <button id="start-button">시작</button>
+    </div>
     
-  </head>
-  <body>
-    hahahaha
-      <script src="main.js"></script>
-  </body>
+    <button hidden id="next-button">다음</button>
+    <div hidden id="game-answer">정답을 입력해 주세요</div>
+    <div hidden id="chance-answer">총 기회는 5번</div>
+    <input hidden id="game-area" type="number">
+    <button hidden id="game-button">시작</button>
+    <button id="rest-button">Reset</button>
+    <div id="history-area"></div>
+    
+    <script src="main.js"></script>
+</body>
 </html>
